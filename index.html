@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Antal Adrienn - Webáruház</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="termek.js"></script>
+    <script src="kosar.js"></script>
+    <script src="t_script.js"></script>
+  </head>
+  <body>
+    <main>
+      <header><h1>Webáruház</h1></header>
+      <nav>
+        <ul>
+            <li><a href="#">Kezdőlap</a></li>
+            <li><a href="#">Menüpont1</a></li>
+            <li><a href="#">Menüpont2</a></li>
+        </ul>
+
+    </nav>
+
+      <article id="valasztek">
+        <div class="termek">
+          <h3></h3>
+          <img src="" alt="" />
+          <input type="button" id="kosarba" name="kosarba" value="Kosárba" />
+          <p></p>
+          <span></span>
+        </div>
+      </article>
+      <aside>
+        <h3>A kosár tartalma</h3>
+      <div id="kosar">        
+        <div class="tetel">
+          <div class="tetel_bal"><span></span><input type="number" name="db" id="db"></div>
+          <div class="tetel_jobb">
+            <span class="tetel_osszeg"></span>
+            <span></span>
+          </div>
+        </div>        
+    </div>
+    <div id="osszeg" ></div><div>
+    <input type="button"  id="fizetes" name="fizetes" value="Tovább a fizetéshez"/>
+</aside>
+      <footer>Készítette: Antal Adrienn</footer>
+    </main>
+  </body>
+</html>

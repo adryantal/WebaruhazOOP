@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+body {
+  background-color: blanchedalmond;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main {
+  background-color: pink;
+  border: 1px solid palevioletred;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "nav nav nav"
+    "v v as"
+    "f f f";
+}
+
+header {
+  grid-area: h;
+}
+nav {
+  grid-area: nav;
+}
+
+#valasztek {
+  grid-area: v;
+}
+aside {
+  grid-area: as;
+  background-color: bisque;
+  padding: 10px;
+  margin: 0px 0px 0px 10px;
+  border: 1px solid palevioletred;
+  border-radius: 3px;
+  box-shadow: 1px 2px 4px plum;
+  position: relative;  
+  width: 300px;
+  
+}
+
+#valasztek {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-content: center;
+    justify-items: center;
+  }
+
+  #valasztek img {
+    width: 100%;
+    border: 1px solid palevioletred;
+  }
+
+footer {
+  grid-area: f;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+header,
+footer,
+#valasztek h3 {
+  text-align: center;
+  background-color: plum;
+  border: 1px solid palevioletred;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+nav ul {
+  display: flex;
+  flex: 3;
+  flex-direction: row;
+  margin-top: 0;
+  padding-left: 0;
+  align-items: center;
+  border: 1px solid palevioletred;
+  background-color: bisque;
+}
+
+nav li:hover {
+  background-color: lightyellow;
+  border: 1px solid linen;
+  box-shadow: 1px 2px 2px lightpink;
+}
+
+
+.tetel {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 5px 0px;
+}
+
+.tetel_jobb input {
+  color: red;
+}
+
+.tetel_bal input {
+  width: 40px;
+  margin-left: 10px;
+  
+}
+
+
+
+.termek {
+  border: 1px solid plum;
+  padding: 10px;
+  border-radius: 3px;
+}
+.termek span {
+  float: right;
+  border: 1px solid palevioletred;
+  padding: 3px;
+  background: lavenderblush;
+  border-radius: 3px;
+}
+
+
+
+#fizetes {
+  margin: 0px 0px 10px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.osszeg {
+  float: right;
+  padding: 10px;
+  color: darkmagenta;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: plum;
+  border: 1px solid palevioletred;
+}
+
+@media only screen and (max-width: 760px) {
+  main {
+    max-width: 100%;
+    grid-template-areas:
+    "h "
+    "nav"
+    "as"
+    "v"
+    "f";
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+  aside{
+      width: 100%;
+      margin: 0px 0px 20px 0px;  
+      padding: 0px;     
+  }
+
+  #kosar{
+    padding: 10px; 
+  }
+
+  #fizetes{ 
+      left: 10px;
+   
+  }
+
+  #osszeg{
+      margin: 0px 10px 10px 0px;
+  }
+
+   aside h3{
+      text-align: center;
+  }
+ 
+}
